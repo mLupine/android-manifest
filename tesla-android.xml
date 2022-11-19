@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="tesla-android" fetch="https://github.com/tesla-android/" />
-  <remote name="github" fetch="https://github.com/" />  
+  <remote name="github" fetch="https://github.com/" />
   <remote name="opengapps" fetch="https://github.com/opengapps/"  />
   <remote name="opengapps-gitlab" fetch="https://gitlab.opengapps.org/opengapps/"  />
+  <remote name="sfX" fetch="https://github.com/sfX-Android/" />
 
   <remove-project name="platform/packages/apps/Camera2" />
   <remove-project name="platform/packages/apps/LegacyCamera" />
@@ -18,7 +19,7 @@
   <remove-project name="platform/system/core" />
   <remove-project name="platform/hardware/broadcom/libbt" />
   <remove-project name="platform/external/mesa3d" />
-  
+
   <remove-project name="device/generic/car" />
 
   <project path="system/core" remote="tesla-android" name="android-system-core.git" revision="23534d1e1ec42a2ea67504398c9eacdf6631961e" />
@@ -42,4 +43,7 @@
   <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps-gitlab" />
   <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps-gitlab" />
   <project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="opengapps-gitlab" />
+
+  <project path="vendor/extendrom" name="android_vendor_extendrom" remote="sfX" revision="main" />
 </manifest>
+
